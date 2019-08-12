@@ -1,0 +1,65 @@
+/* pages/my/my.wxss */
+.my {
+  color: #555;
+}
+
+.my .profile {
+  display: flex;
+  height: 140rpx;
+  padding-top: 60rpx;
+  background: #E8AF00;
+}
+
+.my .profile .image {
+  overflow: hidden;
+  width: 100rpx;
+  height: 100rpx;
+  border: 2px solid #fff;
+  margin-left: 60rpx;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.my .profile .text {
+  display: flex;
+  height: 50rpx;
+  color: #FFFFFF;
+}
+
+.my .profile .text .name{
+  margin: 50rpx;
+}
+
+.my .address, .my .order {
+  padding: 20rpx;
+  text-align: center;
+}
+
+.my .address {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.my .left {
+  text-align: left;
+}
+
+.my .left .detail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+
+.my .left .other {
+  padding-top: 20rpx;
+  font-size: 35rpx;
+}
+
+.my .left .other text {
+  padding-right: 50rpx;
+}
+
+.my .order {
+  margin-top: 20rpx;
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}

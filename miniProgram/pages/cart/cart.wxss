@@ -1,0 +1,146 @@
+/* pages/cart/cart.wxss */
+.cart .shop {
+  margin-bottom: 200rpx;
+}
+
+.cart .shop .item {
+  display: flex;
+  align-items: center;
+  height: 190rpx;
+  padding: 5rpx 10rpx;
+  border-bottom: 1px solid #ccc;
+  color: #444;
+}
+
+.cart .shop .item .left {
+  width: 10%;
+  text-align: center;
+}
+
+.cart .shop .item .left image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.cart .shop .item .center {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart .shop .item .center image {
+  width: 180rpx;
+  height: 180rpx;
+  background: #efefef;
+}
+
+.cart .shop .item .right {
+  width: 60%;
+  font-size: 35rpx;
+  padding: 0 20rpx;
+}
+
+.cart .shop .item .right .top {
+  display: flex;
+  width: 100%;
+  height: 85rpx;
+  line-height: 85rpx;
+}
+
+.cart .shop .item .right .top .name {
+  overflow: hidden;
+  width: 60%;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+
+.cart .shop .item .right .top .price {
+  width: 40%;
+  padding-right: 10rpx;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.cart .shop .item .right .bottom {
+  display: flex;
+  height: 85rpx;
+  line-height: 85rpx;
+}
+
+.cart .shop .item .right .bottom .count {
+  width: 30%;
+  line-height: 85rpx;
+  text-align: center;
+}
+
+.cart .shop .item .right .bottom .sub {
+  width: 15%;
+  text-align: left;
+}
+
+.cart .shop .item .right .bottom .add {
+  width: 15%;
+  text-align: right;
+}
+
+.cart .shop .item .right .bottom .delete {
+  width: 40%;
+  text-align: right;
+}
+
+.cart .shop .item .right .bottom .delete text {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+.cart .fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #E8AF00;
+  color: #fff;
+  font-size: 35rpx;
+  display: flex;
+}
+
+.cart .fixed .all {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin-left: 20rpx;
+}
+
+.cart .fixed .all image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+.cart .fixed .calc {
+  margin: 0 85rpx;
+}
+
+.cart .fixed .tap {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.cart .fixed .tap text {
+  display: inline-block;
+  width: 100%;
+}
+
+.cart .fixed .tap image {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.disable {
+  color: #999999;
+}

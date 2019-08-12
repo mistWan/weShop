@@ -1,0 +1,47 @@
+<!--pages/product/product.wxml-->
+<view class="product">
+  <view class="cart" bindtap="onNav">
+    <image src="../../resources/image/icon/cart@top.png"></image>
+    <view wx:if="{{cart>0}}">{{cart}}</view>
+  </view>
+  <view class="image">
+    <image src="{{product.image}}" mode="aspectFit"/>
+  </view>
+  <view class="detail">
+    <view>{{product.stock}} 件</view>
+    <view>{{product.name}}</view>
+    <view>￥ {{product.price}}</view>
+  </view>
+  <view class="operate">
+    <picker  bindchange="onCount" value="{{index}}" range="{{counts}}">
+      <view>
+        <text class="tips">数量</text>
+        <text class="data">{{count>0?count:1}}</text>
+        <image class="icon" src="../../resources/image/icon/arrow@down.png"></image>
+      </view>
+    </picker>
+    <view class="add" bindtap="onCart">
+      <text>|</text>
+      <text class="liter">加入购物车</text>
+      <image src="../../resources/image/icon/cart.png/"/>
+    </view>
+  </view>
+  <view class="info">
+    <view class="tab">
+      <block wx:for="{{['商品详情' ,'产品参数','售后保障']}}" wx:key="{{index}}">
+        <view class="{{currentIndex==index? 'selected':''}}" bindtap="onTab" data-index="{{index}}">{{item}}</view>
+      </block>
+    </view>
+    <view class="information">
+      <view class="information-product" hidden="{{currentIndex!=0}}">
+        <view>
+          <image src="{{product.image}}" mode="aspectFit"/>
+        </view>
+      </view>
+      <view hidden="{{currentIndex!=1}}">
+        <view>{{product.name}}</view>
+      </view>
+      <view hidden="{{currentIndex!=2}}">七天无理由退货</view>
+    </view>
+  </view>
+</view>

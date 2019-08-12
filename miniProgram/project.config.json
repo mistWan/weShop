@@ -1,0 +1,105 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.7",
+	"appid": "wxb97eb0aa8b4ff97b",
+	"projectname": "shop",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/theme/theme",
+					"pathName": "pages/theme/theme",
+					"query": "id=1&description=美味水果事件",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/product/product",
+					"pathName": "pages/product/product",
+					"query": "id=10",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/category/category",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cart/cart",
+					"pathName": "pages/cart/cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/order/order",
+					"pathName": "pages/order/order",
+					"query": "order_no=15651896956525",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/orders/orders",
+					"pathName": "pages/orders/orders",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

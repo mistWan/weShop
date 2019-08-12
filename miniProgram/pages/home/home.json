@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "SHOP",
+  "usingComponents": {
+    "product": "/components/product/product"
+  }
+}

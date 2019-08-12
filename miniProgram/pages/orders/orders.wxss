@@ -1,0 +1,30 @@
+/* pages/orders/orders.wxss */
+.orders {
+  margin-top: 30rpx;
+  color: #555;
+  font-size: 36rpx;
+}
+.orders .item {
+  padding: 20rpx 50rpx;
+  margin: 30rpx;
+  border-radius: 20rpx;
+  box-shadow:  0 0 10rpx 1rpx #ddd;
+}
+
+.orders .item .info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 0;
+}
+
+.orders .item .info .price {
+  margin: 0 30rpx;
+}
+
+.pay {
+  color: #E8AF00;
+}
+
+.payed {
+  color: green;
+}

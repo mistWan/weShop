@@ -1,0 +1,33 @@
+<!--pages/order/order.wxml-->
+<view class="order">
+  <view class="address">
+    <view class="head">
+      <text>{{order.address.name}}</text>
+      <text class="phone">{{order.address.mobile}}</text>
+    </view>
+    <view class="detail">
+      {{order.address.province}} {{order.address.city}} {{order.address.detail}}
+    </view>
+  </view>
+  <view class="product">
+    <block wx:for="{{order.products}}" wx:key="{{item.id}}">
+      <view class="item">
+        <view class="top">
+          <view class="image">
+            <image src="{{item.image.url}}"></image>
+          </view>
+          <view class="detail">
+            <view class="name">{{item.name}}</view>
+            <view class="count"><text>共{{item.pivot.count}}件</text> x ￥ {{item.price}}</view>
+          </view>
+        </view>
+        <view class="bottom">小计 ￥ {{item.pivot.count*item.price}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="fixed">
+    <text class="counts">共 {{order.total_count}} 件</text>
+    <text class="prices">￥ {{order.total_price}}</text>
+    <text class="button" bindtap="onPay">支  付</text>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+  <view class="left">
+    <block wx:for="{{category}}" wx:key="{{category.id}}">
+      <view class="{{currentId==item.id?'selected':''}}" bindtap="onTab" data-id="{{item.id}}">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="right">
+    <view class="image">
+      <image src="{{products.image.url}}"/>
+    </view>
+    <view class="name ">{{products.name}}</view>
+    <view class="product">
+      <block wx:for="{{products.product}}" wx:key="{{products.id}}">
+        <navigator url="/pages/product/product?id={{item.id}}" hover-class="selected">
+          <view class="card">
+            <image src="{{item.image.url}}"/>
+            <view>{{item.name}}</view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</view>

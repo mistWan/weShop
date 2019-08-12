@@ -1,0 +1,45 @@
+<!--pages/cart/cart.wxml-->
+<view class="cart">
+  <block>
+    <view class="shop">
+      <block wx:for="{{cart}}" wx:key="{{cart.id}}">
+        <view class="item">
+          <view class="left" bindtap="onSelect" data-index="{{index}}" data-id="{{item.id}}" data-status="{{item.status}}">
+            <image wx:if="{{item.status==0}}" src="../../resources/image/icon/circle@selected.png"></image>
+            <image wx:else src="../../resources/image/icon/circle@noselected.png"></image>
+          </view>
+          <view class="center">
+            <image src="{{item.image}}"></image>
+          </view>
+          <view class="right">
+            <view class="top">
+              <view class="name">{{item.name}}</view>
+              <view class="price">￥ {{item.price}}</view>
+            </view>
+            <view class="bottom">
+              <view class="sub {{item.count==1?'disable':''}}" bindtap="onCount" data-id="{{item.id}}" data-type="sub" data-index="{{index}}">-</view>
+              <view class="count">{{item.count}}</view>
+              <view class="add {{item.count==item.stock?'disable':''}}" bindtap="onCount" data-id="{{item.id}}" data-type="add" data-index="{{index}}">+</view>
+              <view class="delete">
+                <text bindtap="onDel" data-id="{{item.id}}" data-index="{{index}}">x</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="fixed">
+      <view class="all" bindtap="onAll">
+        <image wx:if="{{all}}"  src="../../resources/image/icon/all@selected.png"></image>
+        <image wx:else src="../../resources/image/icon/all.png"></image>
+        <text class="letter">全选 {{counts}}</text>
+      </view>
+      <view class="calc">结账</view>
+      <view class="tap" bindtap="onOrder">
+        <text>| ￥ {{prices}}</text>
+        <image wx:if="{{prices==0}}" src="../../resources/image/icon/arrow@grey.png"></image>
+        <image wx:else src="../../resources/image/icon/arrow.png"></image>
+      </view>
+    </view>
+  </block>
+</view>

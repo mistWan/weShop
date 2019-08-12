@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9d8c966c-0ead-445d-9b81-bc67ca3d04bd" name="47.102.207.36" url="http://47.102.207.36">
+        <fileTransfer host="47.102.207.36" port="22" rootFolder="/var/www/html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="47bf64cd-7459-4e8b-adf5-aa4d3da4b40b" name="nanju" url="http://118.89.186.183">
+        <fileTransfer host="118.89.186.183" port="22" rootFolder="/develop/pay" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

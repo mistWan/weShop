@@ -1,0 +1,39 @@
+/* pages/home/home.wxss */
+
+swiper {
+  width: 100%;
+  height: 400rpx;
+}
+swiper swiper-item, swiper swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin: 50rpx 0 30rpx;
+  text-align: center;
+}
+
+view .theme .theme-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+view .theme .theme-box .small {
+  display: flex;
+  width: 50%;
+  height: 375rpx;
+}
+
+view .theme .theme-box .big {
+  width: 100%;
+  height: 375rpx;
+}
+
+view .theme .theme-box image {
+  width: 100%;
+  height: 100%;
+}
+
+

@@ -1,0 +1,24 @@
+<!--pages/my/my.wxml-->
+<view class="my">
+  <view class="profile">
+    <view class="image">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="text">
+      <view class="name">
+        <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+  </view>
+  <view class="address left" wx:if="{{address}}">
+    <view class="detail">{{address.provinceName}} {{address.cityName}} {{address.countyName}} {{address.detailInfo}}</view>
+    <view class="other">
+      <text>{{address.userName}}</text>
+      <text>{{address.telNumber}}</text>
+    </view>
+  </view>
+  <view class="address" bindtap="onAdd">+ 添加地址</view>
+  <view class="order" bindtap="onOrders">我的订单</view>
+</view>
+
+

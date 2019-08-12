@@ -1,0 +1,116 @@
+/* pages/product/product.wxss */
+.product .cart {
+  position: absolute;
+  top: 80rpx;
+  right: 90rpx;
+}
+
+.product .image {
+  display: flex;
+  justify-content: center;
+}
+
+.product .cart image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.product .cart view {
+  position: absolute;
+  top: -25rpx;
+  left: -25rpx;
+  width: 30rpx;
+  height: 30rpx;
+  padding: 10rpx;
+  background: #E8AF00;
+  color: #FFFFFF;
+  font-size: 10px;
+  text-align: center;
+  line-height: 30rpx;
+  border-radius: 50%;
+}
+
+.product .detail view {
+  margin: 20rpx;
+  color: #444;
+  font-size: 55rpx;
+  text-align: center;
+}
+
+.product .detail view:first-child {
+  font-size: 35rpx;
+}
+
+.product .detail view:last-child {
+  font-size: 45rpx;
+}
+
+.product .operate {
+  display: flex;
+  margin: 40rpx 30rpx;
+  height: 100rpx;
+  background: #E8AF00;
+  color: #FFFFFF;
+  font-size: 35rpx;
+  border-radius: 100rpx;
+}
+
+.product .operate picker {
+  height: 100rpx;
+  width: 47%;
+}
+
+.product .operate picker view {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+
+.product .operate picker view .tips {
+  height: 100rpx;
+  margin-left: 55rpx;
+  line-height: 100rpx;
+}
+
+.product .operate picker view .data {
+  padding: 0 40rpx;
+}
+
+.product .operate picker view image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.product .operate .add {
+  display: flex;
+  align-items: center;
+  width: 53%;
+  line-height: 100rpx;
+}
+
+.product .operate .add .liter {
+  padding-right: 50rpx;
+  padding-left: 40rpx;
+}
+
+.product .operate .add image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.product .info .tab {
+  display: flex;
+  justify-content: space-around;
+  padding: 30rpx;
+}
+
+.selected {
+  color: #E8AF00;
+}
+
+.information .information-product view {
+  display: flex;
+  justify-content: center;
+}
+
+

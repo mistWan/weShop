@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+<view>
+  <swiper indicator-dots autoplay circular>
+    <block wx:for="{{images}}" wx:key="{{images.id}}">
+      <swiper-item bindtap="onProduct" data-id="{{item.id}}">
+        <image src="{{item.image}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="theme">
+    <view class="title">热门主题</view>
+    <view class="theme-box">
+      <block wx:for="{{themes}}" wx:key="{{themes.id}}">
+        <view wx:if="{{index==2}}" class="big" data-id="{{item.id}}" data-description="{{item.description}}" bindtap='onTheme'>
+          <image src="{{item.image}}"></image>
+        </view>
+        <view wx:else class="small" data-id="{{item.id}}" data-description="{{item.description}}" bindtap='onTheme'>
+          <image src="{{item.image}}"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="latest">
+    <view class="title">最近商品</view>
+    <product products="{{latest}}" bindproduct="onProduct"></product>
+  </view>
+</view>

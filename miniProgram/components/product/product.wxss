@@ -1,0 +1,32 @@
+/* components/products/product.wxss */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.products .item {
+  width: 46%;
+  margin: 2%;
+  background: #F7F7F7;
+  border-radius: 5px;
+}
+
+.products .item .image {
+  display: flex;
+  justify-content: center;
+}
+
+.products .item view image {
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.products .item .description {
+  text-align: center;
+}
+
+.products .item .description view {
+  margin-bottom: 20rpx;
+  font-size: 15px;
+}

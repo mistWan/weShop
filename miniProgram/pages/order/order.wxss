@@ -1,0 +1,99 @@
+/* pages/order/order.wxss */
+.order {
+  height: 100%;
+  font-size: 37rpx;
+  color: #555;
+  background: #F7F7F7;
+}
+.order .address {
+  padding: 35rpx;
+  border-bottom: 1px solid #eeee;
+}
+
+.order .address .phone {
+  padding: 0 30rpx;
+  font-size: 30rpx;
+}
+
+.order .address .detail {
+  font-size: 35rpx;
+}
+
+.order .product {
+  margin-top: 20rpx;
+  margin-bottom: 150rpx;
+}
+
+.order .product .item{
+  padding: 20rpx 30rpx;
+  /*border-bottom: 1px solid #E8AF00;*/
+  margin: 30rpx 10rpx;
+  border-radius: 30rpx;
+  background: #fff;
+}
+
+.order .product .top {
+  display: flex;
+  height: 150rpx;
+  font-style: 33rpx;
+}
+
+.order .product .top .image {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 30rpx;
+  /*background: #efefef;*/
+}
+
+.order .product .top .image image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.order .product .top .detail {
+  width: 100%;
+  text-align: right;
+}
+
+.order .product .top .detail view{
+  height: 75rpx;
+  line-height: 75rpx;
+}
+
+.order .product .top .detail view text {
+  padding: 0 20rpx;
+}
+
+.order .product .bottom {
+  text-align: right;
+  margin: 20rpx 0;
+}
+
+.order .fixed {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100rpx;
+  border-top: 1px solid #EEEEEE;
+  background: #fff;
+  text-align: right;
+}
+
+.order .fixed text {
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.order .fixed .button {
+  width: 200rpx;
+  background: #E8AF00;
+  color: #FFFFFF;
+}
+
+.order .fixed .prices {
+  width: 200rpx;
+}
+

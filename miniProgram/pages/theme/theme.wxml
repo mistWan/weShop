@@ -1,0 +1,10 @@
+<!--pages/theme/theme.wxml-->
+<view>
+  <view>
+    <image src="{{theme.head_image.url}}" mode="aspectFill"></image>
+  </view>
+  <view>
+    <view class="title">{{theme.name}}</view>
+    <product products="{{theme.products}}"/>
+  </view>
+</view>

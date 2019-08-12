@@ -1,0 +1,64 @@
+/* pages/category/category.wxss */
+.category {
+  display: flex;
+}
+
+.category .left {
+  width: 22%;
+  text-align: center;
+  border-right: 1px #ddd solid;
+  margin-right: 1%;
+  color: #555;
+}
+
+.category .left view {
+  padding: 30rpx 0;
+}
+
+.category .right {
+  width: 77%;
+  color: #555;
+}
+
+.category .right .image {
+  height: 200rpx;
+  margin: 30rpx;
+  text-align: center;
+}
+
+.category .right .image image {
+  width: 520rpx;
+  max-height: 200rpx;
+}
+
+.category .right .name {
+  margin: 80rpx 0 20rpx;
+  text-align: center;
+}
+
+.category .right .product {
+  display: flex;
+  flex-wrap: wrap;
+}
+navigator {
+  display: inline-block;
+  width: 50%;
+}
+.category .right .product .card {
+  width: 96%;
+  margin: 2%;
+}
+
+.category .right .product .card image {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.category .right .product .card view {
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.selected {
+  color: #E8AF00
+}
